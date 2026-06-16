@@ -1,0 +1,474 @@
+@prefix ex: <http://example.org/recurso/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vd: <http://example.org/vd#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:notificacao_001 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 001"@pt ;
+    vd:dataNotificacao "2025-12-25"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_virgolandia ;
+    vd:possuiAutorEnvolvido ex:autor_001 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_ignorado ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_001 .
+
+ex:notificacao_002 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 002"@pt ;
+    vd:dataNotificacao "2025-12-19"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_governador_valadares ;
+    vd:possuiAutorEnvolvido ex:autor_002 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_ignorado ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_ignorado ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_002 .
+
+ex:notificacao_003 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 003"@pt ;
+    vd:dataNotificacao "2025-08-30"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_via_publica ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_003 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_sim ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_003 .
+
+ex:notificacao_004 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 004"@pt ;
+    vd:dataNotificacao "2025-07-29"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_004 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_nao ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_004 .
+
+ex:notificacao_005 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 005"@pt ;
+    vd:dataNotificacao "2025-06-29"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_005 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_nao ;
+    vd:possuiTipoViolencia ex:violencia_psicologica ;
+    vd:possuiVitima ex:vitima_005 .
+
+ex:notificacao_006 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 006"@pt ;
+    vd:dataNotificacao "2025-06-29"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_006 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_sim ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_006 .
+
+ex:notificacao_007 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 007"@pt ;
+    vd:dataNotificacao "2025-09-07"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_outro ;
+    vd:ocorreuEmMunicipio ex:municipio_nazareno ;
+    vd:possuiAutorEnvolvido ex:autor_007 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_nao_informado ;
+    vd:possuiTipoViolencia ex:violencia_fisica,
+        ex:violencia_psicologica,
+        ex:violencia_sexual ;
+    vd:possuiVitima ex:vitima_007 .
+
+ex:notificacao_008 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 008"@pt ;
+    vd:dataNotificacao "2025-10-22"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_008 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_sim ;
+    vd:possuiTipoViolencia ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_008 .
+
+ex:notificacao_009 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 009"@pt ;
+    vd:dataNotificacao "2025-10-27"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_ibia ;
+    vd:possuiAutorEnvolvido ex:autor_009 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_sim ;
+    vd:possuiTipoViolencia ex:violencia_psicologica ;
+    vd:possuiVitima ex:vitima_009 .
+
+ex:notificacao_010 a vd:NotificacaoViolencia ;
+    rdfs:label "Notificação 010"@pt ;
+    vd:dataNotificacao "2025-10-16"^^xsd:date ;
+    vd:ocorreuEmLocal ex:localocorrencia_residencia ;
+    vd:ocorreuEmMunicipio ex:municipio_uberaba ;
+    vd:possuiAutorEnvolvido ex:autor_010 ;
+    vd:possuiNumeroEnvolvidos ex:numeroenvolvidos_um ;
+    vd:possuiRecorrencia ex:recorrenciaviolencia_sim ;
+    vd:possuiTipoViolencia ex:violencia_autoprovocada,
+        ex:violencia_fisica ;
+    vd:possuiVitima ex:vitima_010 .
+
+vd:dataNascimento a owl:DatatypeProperty ;
+    rdfs:label "data de nascimento"@pt ;
+    rdfs:domain vd:Vitima ;
+    rdfs:range xsd:date .
+
+vd:dataNotificacao a owl:DatatypeProperty ;
+    rdfs:label "data da notificação"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range xsd:date .
+
+vd:idade a owl:DatatypeProperty ;
+    rdfs:label "idade"@pt ;
+    rdfs:domain vd:Vitima ;
+    rdfs:range xsd:integer .
+
+vd:ocorreuEmLocal a owl:ObjectProperty ;
+    rdfs:label "ocorreu em local"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:LocalOcorrencia .
+
+vd:ocorreuEmMunicipio a owl:ObjectProperty ;
+    rdfs:label "ocorreu em município"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:Municipio .
+
+vd:possuiAutorEnvolvido a owl:ObjectProperty ;
+    rdfs:label "possui autor envolvido"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:AutorEnvolvido .
+
+vd:possuiIdentidadeGenero a owl:ObjectProperty ;
+    rdfs:label "possui identidade de gênero"@pt ;
+    rdfs:domain vd:Vitima ;
+    rdfs:range vd:IdentidadeGenero .
+
+vd:possuiNumeroEnvolvidos a owl:ObjectProperty ;
+    rdfs:label "possui número de envolvidos"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:NumeroEnvolvidos .
+
+vd:possuiOrientacaoSexual a owl:ObjectProperty ;
+    rdfs:label "possui orientação sexual"@pt ;
+    rdfs:domain vd:Vitima ;
+    rdfs:range vd:OrientacaoSexual .
+
+vd:possuiRacaCor a owl:ObjectProperty ;
+    rdfs:label "possui raça/cor"@pt ;
+    rdfs:domain vd:Vitima ;
+    rdfs:range vd:RacaCor .
+
+vd:possuiRecorrencia a owl:ObjectProperty ;
+    rdfs:label "possui recorrência"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:RecorrenciaViolencia .
+
+vd:possuiSexo a owl:ObjectProperty ;
+    rdfs:label "possui sexo"@pt ;
+    rdfs:domain vd:Pessoa ;
+    rdfs:range vd:Sexo .
+
+vd:possuiTipoViolencia a owl:ObjectProperty ;
+    rdfs:label "possui tipo de violência"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:TipoViolencia .
+
+ex:autor_001 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 001"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_002 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 002"@pt ;
+    vd:possuiSexo ex:sexo_ignorado .
+
+ex:autor_003 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 003"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_004 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 004"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_005 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 005"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_006 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 006"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_007 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 007"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_008 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 008"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_009 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 009"@pt ;
+    vd:possuiSexo ex:sexo_masculino .
+
+ex:autor_010 a vd:AutorEnvolvido ;
+    rdfs:label "Autor envolvido 010"@pt ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:identidadegenero_ignorado a vd:IdentidadeGenero ;
+    rdfs:label "Ignorado"@pt .
+
+ex:localocorrencia_outro a vd:LocalOcorrencia ;
+    rdfs:label "Outro"@pt .
+
+ex:localocorrencia_via_publica a vd:LocalOcorrencia ;
+    rdfs:label "Via pública"@pt .
+
+ex:municipio_governador_valadares a vd:Municipio ;
+    rdfs:label "Governador Valadares"@pt .
+
+ex:municipio_nazareno a vd:Municipio ;
+    rdfs:label "Nazareno"@pt .
+
+ex:municipio_uberaba a vd:Municipio ;
+    rdfs:label "Uberaba"@pt .
+
+ex:municipio_virgolandia a vd:Municipio ;
+    rdfs:label "Virgolândia"@pt .
+
+ex:numeroenvolvidos_ignorado a vd:NumeroEnvolvidos ;
+    rdfs:label "Ignorado"@pt .
+
+ex:orientacaosexual_nao_se_aplica a vd:OrientacaoSexual ;
+    rdfs:label "Não se aplica"@pt .
+
+ex:recorrenciaviolencia_nao_informado a vd:RecorrenciaViolencia ;
+    rdfs:label "Não informado"@pt .
+
+ex:restricao_notificacao_exatamente_uma_vitima a owl:Restriction ;
+    owl:onClass vd:Vitima ;
+    owl:onProperty vd:possuiVitima ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+ex:sexo_ignorado a vd:Sexo ;
+    rdfs:label "Ignorado"@pt .
+
+ex:violencia_autoprovocada a vd:TipoViolencia,
+        vd:ViolenciaAutoprovocada ;
+    rdfs:label "Violência autoprovocada"@pt .
+
+ex:violencia_sexual a vd:TipoViolencia,
+        vd:ViolenciaSexual ;
+    rdfs:label "Violência sexual"@pt .
+
+ex:vitima_001 a vd:VitimaMulher ;
+    rdfs:label "Vítima 001"@pt ;
+    vd:dataNascimento "1992-06-22"^^xsd:date ;
+    vd:idade 33 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_ignorado ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_preta ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_002 a vd:VitimaMulher ;
+    rdfs:label "Vítima 002"@pt ;
+    vd:dataNascimento "2003-10-21"^^xsd:date ;
+    vd:idade 22 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_parda ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_003 a vd:VitimaMulher ;
+    rdfs:label "Vítima 003"@pt ;
+    vd:dataNascimento "1997-06-11"^^xsd:date ;
+    vd:idade 28 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_parda ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_004 a vd:VitimaMulher ;
+    rdfs:label "Vítima 004"@pt ;
+    vd:dataNascimento "1986-01-14"^^xsd:date ;
+    vd:idade 39 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_parda ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_005 a vd:VitimaMulher ;
+    rdfs:label "Vítima 005"@pt ;
+    vd:dataNascimento "1997-08-07"^^xsd:date ;
+    vd:idade 27 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_preta ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_006 a vd:VitimaMulher ;
+    rdfs:label "Vítima 006"@pt ;
+    vd:dataNascimento "2005-06-11"^^xsd:date ;
+    vd:idade 20 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_branca ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_007 a vd:VitimaMulher ;
+    rdfs:label "Vítima 007"@pt ;
+    vd:dataNascimento "2019-06-29"^^xsd:date ;
+    vd:idade 6 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_nao_se_aplica ;
+    vd:possuiRacaCor ex:racacor_branca ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_008 a vd:VitimaMulher ;
+    rdfs:label "Vítima 008"@pt ;
+    vd:dataNascimento "1982-04-03"^^xsd:date ;
+    vd:idade 43 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_parda ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_009 a vd:VitimaMulher ;
+    rdfs:label "Vítima 009"@pt ;
+    vd:dataNascimento "1982-04-03"^^xsd:date ;
+    vd:idade 43 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_preta ;
+    vd:possuiSexo ex:sexo_feminino .
+
+ex:vitima_010 a vd:VitimaMulher ;
+    rdfs:label "Vítima 010"@pt ;
+    vd:dataNascimento "2011-11-14"^^xsd:date ;
+    vd:idade 13 ;
+    vd:possuiIdentidadeGenero ex:identidadegenero_nao_se_aplica ;
+    vd:possuiOrientacaoSexual ex:orientacaosexual_heterossexual ;
+    vd:possuiRacaCor ex:racacor_branca ;
+    vd:possuiSexo ex:sexo_feminino .
+
+vd:ViolenciaAutoprovocada a owl:Class ;
+    rdfs:label "Violência autoprovocada"@pt ;
+    rdfs:subClassOf vd:TipoViolencia .
+
+vd:ViolenciaFisica a owl:Class ;
+    rdfs:label "Violência física"@pt ;
+    rdfs:subClassOf vd:TipoViolencia .
+
+vd:ViolenciaPsicologica a owl:Class ;
+    rdfs:label "Violência psicológica"@pt ;
+    rdfs:subClassOf vd:TipoViolencia .
+
+vd:ViolenciaSexual a owl:Class ;
+    rdfs:label "Violência sexual"@pt ;
+    rdfs:subClassOf vd:TipoViolencia .
+
+vd:possuiVitima a owl:ObjectProperty ;
+    rdfs:label "possui vítima"@pt ;
+    rdfs:domain vd:NotificacaoViolencia ;
+    rdfs:range vd:Vitima .
+
+ex:recorrenciaviolencia_ignorado a vd:RecorrenciaViolencia ;
+    rdfs:label "Ignorado"@pt .
+
+ex:recorrenciaviolencia_nao a vd:RecorrenciaViolencia ;
+    rdfs:label "Não"@pt .
+
+ex:racacor_branca a vd:RacaCor ;
+    rdfs:label "Branca"@pt .
+
+ex:racacor_preta a vd:RacaCor ;
+    rdfs:label "Preta"@pt .
+
+ex:violencia_psicologica a vd:TipoViolencia,
+        vd:ViolenciaPsicologica ;
+    rdfs:label "Violência psicológica"@pt .
+
+vd:IdentidadeGenero a owl:Class ;
+    rdfs:label "Identidade de gênero"@pt .
+
+vd:NumeroEnvolvidos a owl:Class ;
+    rdfs:label "Número de envolvidos"@pt .
+
+vd:OrientacaoSexual a owl:Class ;
+    rdfs:label "Orientação sexual"@pt .
+
+vd:Pessoa a owl:Class ;
+    rdfs:label "Pessoa"@pt .
+
+ex:racacor_parda a vd:RacaCor ;
+    rdfs:label "Parda"@pt .
+
+vd:LocalOcorrencia a owl:Class ;
+    rdfs:label "Local de ocorrência"@pt .
+
+vd:RacaCor a owl:Class ;
+    rdfs:label "Raça/cor"@pt .
+
+vd:Sexo a owl:Class ;
+    rdfs:label "Sexo"@pt .
+
+ex:recorrenciaviolencia_sim a vd:RecorrenciaViolencia ;
+    rdfs:label "Sim"@pt .
+
+vd:RecorrenciaViolencia a owl:Class ;
+    rdfs:label "Recorrência da violência"@pt .
+
+ex:municipio_ibia a vd:Municipio ;
+    rdfs:label "Ibiá"@pt .
+
+vd:Municipio a owl:Class ;
+    rdfs:label "Município"@pt .
+
+ex:localocorrencia_residencia a vd:LocalOcorrencia ;
+    rdfs:label "Residencia"@pt .
+
+ex:sexo_masculino a vd:Sexo ;
+    rdfs:label "Masculino"@pt .
+
+ex:violencia_fisica a vd:TipoViolencia,
+        vd:ViolenciaFisica ;
+    rdfs:label "Violência física"@pt .
+
+vd:Vitima a owl:Class ;
+    rdfs:label "Vítima"@pt ;
+    rdfs:subClassOf vd:Pessoa .
+
+ex:identidadegenero_nao_se_aplica a vd:IdentidadeGenero ;
+    rdfs:label "Não se aplica"@pt .
+
+ex:numeroenvolvidos_um a vd:NumeroEnvolvidos ;
+    rdfs:label "Um"@pt .
+
+ex:orientacaosexual_heterossexual a vd:OrientacaoSexual ;
+    rdfs:label "Heterossexual"@pt .
+
+vd:TipoViolencia a owl:Class ;
+    rdfs:label "Tipo de violência"@pt .
+
+vd:VitimaMulher a owl:Class ;
+    rdfs:label "Vítima mulher"@pt ;
+    rdfs:subClassOf vd:Vitima .
+
+ex:sexo_feminino a vd:Sexo ;
+    rdfs:label "Feminino"@pt .
+
+vd:AutorEnvolvido a owl:Class ;
+    rdfs:label "Autor envolvido"@pt ;
+    rdfs:subClassOf vd:Pessoa .
+
+vd:NotificacaoViolencia a owl:Class ;
+    rdfs:label "Notificação de violência"@pt ;
+    rdfs:subClassOf ex:restricao_notificacao_exatamente_uma_vitima .
+

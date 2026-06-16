@@ -1,0 +1,146 @@
+{
+  "observacao": "Arquivo de apoio que descreve o mapeamento CSV -> RDF usado neste trabalho. Para atender literalmente ao requisito 'gerado pelo Refine', este mapeamento deve ser recriado/importado no OpenRefine/RDF extension e exportado a partir dele.",
+  "namespaces": {
+    "vd": "http://example.org/vd#",
+    "ex": "http://example.org/recurso/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "row_resource": {
+    "source": "cada linha do CSV",
+    "uri_template": "http://example.org/recurso/notificacao_{row_index_3_digits}",
+    "rdf_type": "vd:NotificacaoViolencia",
+    "label_template": "Notificação {row_index_3_digits}"
+  },
+  "resources_created_per_row": [
+    {
+      "class": "vd:VitimaMulher",
+      "uri_template": "http://example.org/recurso/vitima_{row_index_3_digits}",
+      "linked_by": "vd:possuiVitima"
+    },
+    {
+      "class": "vd:AutorEnvolvido",
+      "uri_template": "http://example.org/recurso/autor_{row_index_3_digits}",
+      "linked_by": "vd:possuiAutorEnvolvido"
+    }
+  ],
+  "column_mappings": [
+    {
+      "column": "dt_notific",
+      "subject": "notificacao",
+      "predicate": "vd:dataNotificacao",
+      "object_type": "literal",
+      "datatype": "xsd:date"
+    },
+    {
+      "column": "dt_nasc",
+      "subject": "vitima",
+      "predicate": "vd:dataNascimento",
+      "object_type": "literal",
+      "datatype": "xsd:date"
+    },
+    {
+      "column": "nu_idade_n",
+      "subject": "vitima",
+      "predicate": "vd:idade",
+      "object_type": "literal",
+      "datatype": "xsd:integer"
+    },
+    {
+      "column": "cs_sexo",
+      "subject": "vitima",
+      "predicate": "vd:possuiSexo",
+      "object_type": "resource",
+      "class": "vd:Sexo"
+    },
+    {
+      "column": "cs_raca",
+      "subject": "vitima",
+      "predicate": "vd:possuiRacaCor",
+      "object_type": "resource",
+      "class": "vd:RacaCor"
+    },
+    {
+      "column": "id_mn_resi",
+      "subject": "notificacao",
+      "predicate": "vd:ocorreuEmMunicipio",
+      "object_type": "resource",
+      "class": "vd:Municipio"
+    },
+    {
+      "column": "local_ocor",
+      "subject": "notificacao",
+      "predicate": "vd:ocorreuEmLocal",
+      "object_type": "resource",
+      "class": "vd:LocalOcorrencia"
+    },
+    {
+      "column": "out_vezes",
+      "subject": "notificacao",
+      "predicate": "vd:possuiRecorrencia",
+      "object_type": "resource",
+      "class": "vd:RecorrenciaViolencia"
+    },
+    {
+      "column": "les_autop",
+      "subject": "notificacao",
+      "predicate": "vd:possuiTipoViolencia",
+      "object_type": "resource",
+      "resource": "ex:violencia_autoprovocada",
+      "condition": "valor == Sim"
+    },
+    {
+      "column": "viol_fisic",
+      "subject": "notificacao",
+      "predicate": "vd:possuiTipoViolencia",
+      "object_type": "resource",
+      "resource": "ex:violencia_fisica",
+      "condition": "valor == Sim"
+    },
+    {
+      "column": "viol_psico",
+      "subject": "notificacao",
+      "predicate": "vd:possuiTipoViolencia",
+      "object_type": "resource",
+      "resource": "ex:violencia_psicologica",
+      "condition": "valor == Sim"
+    },
+    {
+      "column": "viol_sexu",
+      "subject": "notificacao",
+      "predicate": "vd:possuiTipoViolencia",
+      "object_type": "resource",
+      "resource": "ex:violencia_sexual",
+      "condition": "valor == Sim"
+    },
+    {
+      "column": "num_envolv",
+      "subject": "notificacao",
+      "predicate": "vd:possuiNumeroEnvolvidos",
+      "object_type": "resource",
+      "class": "vd:NumeroEnvolvidos"
+    },
+    {
+      "column": "autor_sexo",
+      "subject": "autor",
+      "predicate": "vd:possuiSexo",
+      "object_type": "resource",
+      "class": "vd:Sexo"
+    },
+    {
+      "column": "orient_sex",
+      "subject": "vitima",
+      "predicate": "vd:possuiOrientacaoSexual",
+      "object_type": "resource",
+      "class": "vd:OrientacaoSexual"
+    },
+    {
+      "column": "ident_gen",
+      "subject": "vitima",
+      "predicate": "vd:possuiIdentidadeGenero",
+      "object_type": "resource",
+      "class": "vd:IdentidadeGenero"
+    }
+  ]
+}

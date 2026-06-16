@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://example.org/ontologia/violencia-domestica#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Municipio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Município</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#ocorreuEmMunicipio"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Heterossexual">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#OrientacaoSexual"/>
+    <rdfs:label xml:lang="pt">Heterossexual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#idade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">idade</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#OrientacaoIgnorada">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#OrientacaoSexual"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiOrientacaoSexual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui orientação sexual</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#OrientacaoSexual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Vitima">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Vítima</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#Pessoa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#VitimaMulher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Vítima mulher</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Homossexual">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#OrientacaoSexual"/>
+    <rdfs:label xml:lang="pt">Homossexual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#possuiTipoViolencia"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TipoFisica">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#ViolenciaFisica"/>
+    <rdfs:label xml:lang="pt">Violência física</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#IdentidadeIgnorada">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeGenero"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ocorreuEmMunicipio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">ocorreu em município</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiIdentidadeGenero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui identidade de gênero</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeGenero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Virgolandia">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+    <rdfs:label xml:lang="pt">Virgolândia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ViolenciaAutoprovocada">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Violência autoprovocada</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Sexo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Sexo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#dataNascimento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">data de nascimento</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#SexoMasculino">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Sexo"/>
+    <rdfs:label xml:lang="pt">Masculino</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TranssexualMulher">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeGenero"/>
+    <rdfs:label xml:lang="pt">Transsexual Mulher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Notificação de violência</rdfs:label>
+    <rdfs:comment xml:lang="pt">Registro de caso suspeito ou confirmado de violência interpessoal/autoprovocada contra mulher.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b1"/>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b2"/>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b3"/>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiVitima">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui vítima</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ViolenciaSexual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Violência sexual</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="pt">Ontologia de Notificações de Violência contra Mulheres</rdfs:label>
+    <rdfs:comment xml:lang="pt">Ontologia modelada a partir do conjunto de dados Violência contra Mulheres - SES, do Portal de Dados Abertos de Minas Gerais. O foco é representar notificações de violência, vítima, autor envolvido, município, local de ocorrência e tipos de violência.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaPreta">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Preta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#AutorEnvolvido">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Autor envolvido</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#Pessoa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#observacaoRegistro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">observação do registro</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#BarOuSimilar">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Bar ou similar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#LocalIgnorado">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TranssexualHomem">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeGenero"/>
+    <rdfs:label xml:lang="pt">Transsexual Homem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#possuiSexo"/>
+    <owl:hasValue rdf:resource="http://example.org/ontologia/violencia-domestica#SexoFeminino"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#SexoIgnorado">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Sexo"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#NotificacaoExemplo001">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:label xml:lang="pt">Notificação exemplo 001</rdfs:label>
+    <dataNotificacao rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-25</dataNotificacao>
+    <possuiVitima rdf:resource="http://example.org/ontologia/violencia-domestica#VitimaExemplo001"/>
+    <possuiAutorEnvolvido rdf:resource="http://example.org/ontologia/violencia-domestica#AutorExemplo001"/>
+    <ocorreuEmMunicipio rdf:resource="http://example.org/ontologia/violencia-domestica#Virgolandia"/>
+    <ocorreuEmLocal rdf:resource="http://example.org/ontologia/violencia-domestica#Residencia"/>
+    <possuiTipoViolencia rdf:resource="http://example.org/ontologia/violencia-domestica#TipoFisica"/>
+    <possuiRecorrencia rdf:resource="http://example.org/ontologia/violencia-domestica#RecorrenciaIgnorada"/>
+    <possuiNumeroEnvolvidos rdf:resource="http://example.org/ontologia/violencia-domestica#UmEnvolvido"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiRacaCor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui raça/cor</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TipoSexual">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#ViolenciaSexual"/>
+    <rdfs:label xml:lang="pt">Violência sexual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#GovernadorValadares">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+    <rdfs:label xml:lang="pt">Governador Valadares</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ViolenciaPsicologica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Violência psicológica</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#VitimaExemplo001">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#VitimaMulher"/>
+    <rdfs:label xml:lang="pt">Vítima exemplo 001</rdfs:label>
+    <dataNascimento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-06-22</dataNascimento>
+    <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</idade>
+    <possuiSexo rdf:resource="http://example.org/ontologia/violencia-domestica#SexoFeminino"/>
+    <possuiRacaCor rdf:resource="http://example.org/ontologia/violencia-domestica#RacaPreta"/>
+    <possuiOrientacaoSexual rdf:resource="http://example.org/ontologia/violencia-domestica#Heterossexual"/>
+    <possuiIdentidadeGenero rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeIgnorada"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#SexoFeminino">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Sexo"/>
+    <rdfs:label xml:lang="pt">Feminino</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#IdentidadeNaoSeAplica">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#IdentidadeGenero"/>
+    <rdfs:label xml:lang="pt">Não se aplica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#AutorExemplo001">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#AutorEnvolvido"/>
+    <rdfs:label xml:lang="pt">Autor exemplo 001</rdfs:label>
+    <possuiSexo rdf:resource="http://example.org/ontologia/violencia-domestica#SexoMasculino"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaParda">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Parda</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TipoViolencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Tipo de violência</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#UmEnvolvido">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidos"/>
+    <rdfs:label xml:lang="pt">Um</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Ibia">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+    <rdfs:label xml:lang="pt">Ibiá</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#dataNotificacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="pt">data de notificação</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaIgnorada">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#ocorreuEmLocal"/>
+    <owl:hasValue rdf:resource="http://example.org/ontologia/violencia-domestica#Residencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RecorrenciaSim">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RecorrenciaViolencia"/>
+    <rdfs:label xml:lang="pt">Sim</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiTipoViolencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui tipo de violência</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiSexo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui sexo</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#Pessoa"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#Sexo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Número de envolvidos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#CasoEmResidencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Caso com ocorrência em residência</rdfs:label>
+    <rdfs:comment xml:lang="pt">Recorte operacional para analisar casos cujo local de ocorrência foi registrado como residência.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:subClassOf rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiNumeroEnvolvidos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui número de envolvidos</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiAutorEnvolvido">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui autor envolvido</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#AutorEnvolvido"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Escola">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Escola</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#dataNotificacao"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaCor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Raça/cor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#HabitacaoColetiva">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Habitação coletiva</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#possuiRecorrencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">possui recorrência</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#RecorrenciaViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ViaPublica">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Via pública</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#LocalOcorrencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Local de ocorrência</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TipoPsicologica">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#ViolenciaPsicologica"/>
+    <rdfs:label xml:lang="pt">Violência psicológica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Pessoa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Pessoa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#SexoAmbos">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Sexo"/>
+    <rdfs:label xml:lang="pt">Ambos os sexos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#OrientacaoSexual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Orientação sexual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#TipoAutoprovocada">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#ViolenciaAutoprovocada"/>
+    <rdfs:label xml:lang="pt">Violência autoprovocada</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaAmarela">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Amarela</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RecorrenciaViolencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Recorrência da violência</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RecorrenciaNao">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RecorrenciaViolencia"/>
+    <rdfs:label xml:lang="pt">Não</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidosIgnorado">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidos"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#IdentidadeGenero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Identidade de gênero</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ViolenciaFisica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Violência física</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia/violencia-domestica#TipoViolencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n853eac0023da49a098753f6ec2af95f8b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontologia/violencia-domestica#possuiVitima"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://example.org/ontologia/violencia-domestica#Vitima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#DoisOuMaisEnvolvidos">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#NumeroEnvolvidos"/>
+    <rdfs:label xml:lang="pt">Dois ou mais</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#BeloHorizonte">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#Municipio"/>
+    <rdfs:label xml:lang="pt">Belo Horizonte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Residencia">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Residência</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ComercioServicos">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+    <rdfs:label xml:lang="pt">Comércio/Serviços</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RecorrenciaIgnorada">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RecorrenciaViolencia"/>
+    <rdfs:label xml:lang="pt">Ignorado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaIndigena">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Indígena</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#RacaBranca">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#RacaCor"/>
+    <rdfs:label xml:lang="pt">Branca</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#Bissexual">
+    <rdf:type rdf:resource="http://example.org/ontologia/violencia-domestica#OrientacaoSexual"/>
+    <rdfs:label xml:lang="pt">Bissexual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia/violencia-domestica#ocorreuEmLocal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">ocorreu em local</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontologia/violencia-domestica#NotificacaoViolencia"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia/violencia-domestica#LocalOcorrencia"/>
+  </rdf:Description>
+</rdf:RDF>
