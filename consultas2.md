@@ -1,6 +1,6 @@
 ### Pergunta
 
-**Quais notificações recorrentes ocorreram em residência e qual é o subgrafo completo desses casos, incluindo vítima, autor envolvido, município, local, recorrência, raça/cor, sexo e tipos de violência?**
+**Notificações recorrentes ocorreram em residência e qual é o subgrafo completo desses casos, incluindo vítima, autor envolvido, município, local, recorrência, raça/cor, sexo e tipos de violência**
 
 
 ### Query SPARQL
