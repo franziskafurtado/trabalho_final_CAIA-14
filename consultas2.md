@@ -82,7 +82,7 @@ WHERE {
 
 ### Pergunta
 
-**Como construir um grafo-resumo com o total de notificações e a média de idade das vítimas por município e tipo de violência?**
+**Notificações e a média de idade das vítimas por município e tipo de violência**
 
 ### Query SPARQL
 
