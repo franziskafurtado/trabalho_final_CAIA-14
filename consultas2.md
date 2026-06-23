@@ -143,30 +143,3 @@ WHERE {
   )
 }
 ```
-
----
-
-## Versão auxiliar em `SELECT` para conferência da segunda consulta
-
-Como a consulta `CONSTRUCT` retorna triplas RDF, também pode ser utilizada uma versão em `SELECT` para visualizar os resultados em formato de tabela no GraphDB.
-
-```sparql
-PREFIX vd: <http://example.org/vd#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?municipioLabel ?tipoViolenciaLabel
-       (COUNT(DISTINCT ?notificacao) AS ?totalNotificacoes)
-       (AVG(?idade) AS ?mediaIdade)
-WHERE {
-  ?notificacao a vd:NotificacaoViolencia ;
-               vd:ocorreuEmMunicipio ?municipio ;
-               vd:possuiTipoViolencia ?tipoViolencia ;
-               vd:possuiVitima ?vitima .
-
-  ?vitima vd:idade ?idade .
-  ?municipio rdfs:label ?municipioLabel .
-  ?tipoViolencia rdfs:label ?tipoViolenciaLabel .
-}
-GROUP BY ?municipioLabel ?tipoViolenciaLabel
-ORDER BY DESC(?totalNotificacoes) ?municipioLabel ?tipoViolenciaLabel
-```
